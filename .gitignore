@@ -1,0 +1,26 @@
+# Runtime credentials and local configuration
+.env
+.env.*
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Mounted/local secret material
+backend/secrets/
+API_KEY_SETUP/1_PUT_KEYS_HERE.env
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Python and generated runtime data
+__pycache__/
+*.py[cod]
+.venv/
+backend/data/*.db-wal
+backend/data/*.db-shm
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.idea/

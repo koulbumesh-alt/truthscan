@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRUTHSCAN — Live News, Rumours & Evidence Checks</title>
+  <meta name="description" content="India-first live news, attributed fact-check reviews, evidence-based verification, and secure reader accounts.">
+  <link rel="stylesheet" href="styles.css?v=1.5.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+  <!-- top navigation -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand" onclick="navigate('home')" style="cursor:pointer">
+        <span class="logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#08101c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <span>TRUTHSCAN <b>AI</b></span>
+      </div>
+
+      <div class="nav-links" id="navlinks">
+        <button data-nav="home" class="active" onclick="navigate('home')">Home</button>
+        <button data-nav="trending" onclick="navigate('trending')">Trending</button>
+        <button data-nav="rumours" onclick="navigate('rumours')">Rumours</button>
+        <button data-nav="search" onclick="navigate('search')">Search</button>
+        <button data-nav="analyze" onclick="navigate('analyze')">Analyze</button>
+        <button data-nav="history" onclick="navigate('history')">History</button>
+        <button data-nav="signup" id="accountNavLabel" onclick="navigate('signup')">Sign Up</button>
+      </div>
+
+      <div class="nav-right">
+        <span class="demo-pill" style="margin-right:2px" title="Live news feeds with evidence-based verification"><span class="pulse"></span>LIVE + VERIFY</span>
+        <button class="icon-btn" title="Refresh live news and fact checks" onclick="refreshEverything()">↻<span class="badge-dot"></span></button>
+        <button class="icon-btn" id="accountButton" title="Account" onclick="navigate('signup')"><span class="avatar" id="userAvatar" style="width:100%;height:100%;border-radius:0">G</span></button>
+        <button class="icon-btn hamburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="app"></main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js?v=1.5.0"></script>
+  <script src="app.js?v=1.5.0"></script>
+</body>
+</html>
