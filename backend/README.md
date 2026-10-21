@@ -4,7 +4,7 @@ Python/FastAPI backend that aggregates live news and performs transparent, cross
 
 ## What is implemented
 
-- India-first hybrid ingestion from Google News discovery and direct publisher RSS feeds.
+- India's hybrid ingestion from Google News discovery and direct publisher RSS feeds.
 - Direct Indian feeds include Aaj Tak, NDTV, India Today, ABP Live/ABP Hindi, Times of India, The Hindu, Hindustan Times, India TV, TV9 Bharatvarsh, Greater Kashmir, The Wire, and Scroll.in.
 - Publisher-specific discovery includes Zee News, News18, Indian Express, Times Now, ThePrint, Republic World, DD News, WION, and Daily Excelsior where direct feeds are blocked or unavailable.
 - International/subject feeds include BBC sections, Al Jazeera, NASA, and TechCrunch.
